@@ -15,4 +15,5 @@ It was made up by HTML,CSS & JS.<br>
 🔗<strong>ACCESSIBILITY</strong>
 <hr><br>
 The link below the website link where you can access the site.
-<br> It is hosted on Github pages.
+<br> It is hosted on Github pages.<br>
+[https://uglyboy77.github.io/CSS-Site/]
