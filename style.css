@@ -194,9 +194,7 @@ h3{
   font-weight: 700;
   position: relative;
   bottom:50px;
-  left: 70px;
-  font-size: 14px;
-  
+  font-size: 14px;  
 }
 #Projects{
   position: relative;
@@ -204,6 +202,9 @@ h3{
   overflow:hidden;
   height: 100%;
   width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 h4{
   text-align:center;
@@ -288,7 +289,7 @@ flex-shrink: 0;
 }
 .write4{
   position: relative;
-  bottom:35px;
+  bottom:25px;
   color: white;
   background-color: black;
   align-items:center;
