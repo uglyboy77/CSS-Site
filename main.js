@@ -73,3 +73,31 @@ function updateCounter() {
   requestAnimationFrame(updateCounter);
 }
 updateCounter();
+const carousel = document.getElementById('carousel');
+const prevButton = document.getElementById('prev');
+const nextButton = document.getElementById('next');
+let currentIndex = 0;
+
+prevButton.addEventListener('click', () => {
+  if (currentIndex > 0) {
+    currentIndex--;
+  } else {
+    currentIndex = carousel.children.length - 1;
+  }
+  updateCarousel();
+});
+
+nextButton.addEventListener('click', () => {
+  if (currentIndex < carousel.children.length - 1) {
+    currentIndex++;
+  } else {
+    currentIndex = 0;
+  }
+  updateCarousel();
+});
+
+function updateCarousel() {
+  const offset = -currentIndex * 100;
+  carousel.style.transform = `translateX(${offset}%)`;
+}
+
