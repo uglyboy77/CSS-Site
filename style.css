@@ -352,9 +352,10 @@ flex-shrink: 0;
 }
 h5{
   text-align:center;
-  display:block;
+  position:relative;
+  display;block;
   font-size: 30px;
-  bottom:120px;
+  top:230px;
 }
 #Resources{
   position: relative;
