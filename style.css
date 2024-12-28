@@ -3,6 +3,11 @@ body {
     font-family: 'Poppins';
     margin:0px;
 }
+@media (max-width: 600px) {
+  .body{
+    width: 100%;
+  }
+}
 .css{
   position: relative;
   left: 40px;
