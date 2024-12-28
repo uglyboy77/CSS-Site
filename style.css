@@ -354,11 +354,11 @@ h5{
   text-align:center;
   display:block;
   font-size: 30px;
-  top:400px;
+  bottom:120px;
 }
 #Resources{
   position: relative;
-  top:120px;
+  top:200px;
   align-items:center;
   justify-content: center;
   text-align: center;
