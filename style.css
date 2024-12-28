@@ -358,7 +358,7 @@ h5{
 }
 #Resources{
   position: relative;
-  bottom:50px;
+  top:120px;
   align-items:center;
   justify-content: center;
   text-align: center;
