@@ -358,7 +358,7 @@ h5{
 }
 #Resources{
   position: relative;
-  top:120px;
+  bottom:60px;
   align-items:center;
   justify-content: center;
   text-align: center;
@@ -369,13 +369,14 @@ h5{
 }
 #Resources a img{
   position: relative;
-  left:90px;
+  left:110px;
   bottom:10px;
 }
 .text{
   position: relative;
   right: 50px;
   font-size: 13px;
+  top:4px;
 }
 .contact{
   background-color: blue;
