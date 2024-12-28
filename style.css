@@ -318,7 +318,7 @@ flex-shrink: 0;
 }
 .controls{
   position: relative;
-  bottom:3px;
+  top:2px;
 }
 .control-button {
   background-color: blue;
@@ -358,7 +358,7 @@ h5{
 }
 #Resources{
   position: relative;
-  top:200px;
+  bottom:50px;
   align-items:center;
   justify-content: center;
   text-align: center;
