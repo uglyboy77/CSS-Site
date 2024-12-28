@@ -91,7 +91,7 @@ header span{
   opacity: 1;
   flex-shrink: 0;
 }
-#Previous, #next{
+#Previous, #next1{
   background-color:transparent ;
   color: white;
   border-radius: 50px;
@@ -106,7 +106,7 @@ header span{
   z-index: 1;
   top:290px;
 }
-#next{
+#next1{
   left: 350px;
   top: 239px;
 }
@@ -114,17 +114,17 @@ header span{
   content: '<';
   
 }
-#next::before{
+#next1::before{
   content: '>';
 }
 .frames{
   position: relative;
-  bottom: 200px;
+  bottom: 30px;
 }
 h2{
   text-align:center;
   position: relative;
-  bottom:30px;
+  top:30px;
 }
 .news{
   position: relative;
@@ -136,7 +136,7 @@ h2{
   align-items: center;
   justify-content: center;
   text-align: center;
-  bottom:30px;
+  top:30px;
 }
 .news a{
   background-color: blue;
@@ -175,14 +175,14 @@ a{
 h3{
   text-align:center;
   position: relative;
-  top:50px;
+  top:170px;
 }
 #Extra{
   font-size:12px;
   text-align: center;
   display: block;
   position: relative;
-  top:30px;
+  top:150px;
 }
 .extra{
   font-weight: 900;
@@ -198,19 +198,28 @@ h3{
 }
 #Projects{
   position: relative;
-  top:150px;
+  top:310px;
   overflow:hidden;
   height: 100%;
   width: 100%;
   align-items: center;
   justify-content: center;
   text-align: center;
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#Projects img{
+  height: auto;
+  max-width: 100%;
 }
 h4{
   text-align:center;
   position:relative;
   font-size: 30px;
-  bottom: 30px;
+  bottom: 40px;
 }
 .write{
   position:relative;
@@ -284,6 +293,50 @@ flex-shrink: 0;
   position:relative;
   top:25px;
 }
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  max-width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+.controls{
+  position: relative;
+  bottom:3px;
+}
+.control-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 1;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.control-button:hover {
+  background-color: darkblue;
+}
+.hidden {
+  display: none;
+}
 .write3{
   font-size: 13px;
 }
@@ -301,10 +354,11 @@ h5{
   text-align:center;
   display:block;
   font-size: 30px;
+  top:230px;
 }
 #Resources{
   position: relative;
-  bottom:40px;
+  top:200px;
   align-items:center;
   justify-content: center;
   text-align: center;
@@ -315,12 +369,11 @@ h5{
 }
 #Resources a img{
   position: relative;
-  left:100px;
+  left:90px;
   bottom:10px;
 }
 .text{
   position: relative;
-  top: 9px;
   right: 50px;
   font-size: 13px;
 }
@@ -330,7 +383,7 @@ h5{
   color:white;
   text-align: center;
   position:relative;
-  top:42px;
+  top:400px;
   height: 500px;
 }
 #toggle{
