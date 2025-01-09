@@ -2,6 +2,7 @@ body {
     font-size: 15pt;
     font-family: 'Poppins';
     margin:0px;
+    transition:1s;
 }
 .css{
   position: relative;
@@ -442,6 +443,7 @@ footer{
 }
 body.dark-mode {
   background-color:hsla(235, 80%, 33%, 1);
+  transition:1s;
 }
 body.dark-mode .clock{
   color:white;
