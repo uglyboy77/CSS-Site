@@ -394,6 +394,9 @@ h5{
   margin-top: 5px;
   border: none;
   color: white;
+  position: absolute;
+  left:0;
+  top:0;
 }
 h6{
   font-size: 20px;
