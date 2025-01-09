@@ -47,6 +47,21 @@ function toggledown() {
   const dropmenu = document.getElementById('drop');
   dropmenu.classList.toggle('show');
 }
+function toggledown() {
+  const dropmenu = document.getElementById('drop');
+  if (dropmenu) {
+    dropmenu.classList.toggle('show');
+  }
+  const mainImage = document.getElementById('main-image');
+if (dropmenu.classList.contains('show')) {
+  mainImage.src = "/IMG_6817.png"; 
+  mainImage.style.display='block';
+}
+else{
+  mainImage.src="/IMG_5524.png";
+  mainImage.style.display='block';
+}
+}
   function updateClock() {
     const now = new Date();
           const hours = String(now.getHours()).padStart(2, '0');
