@@ -54,11 +54,11 @@ function toggledown() {
   }
   const mainImage = document.getElementById('main-image');
 if (dropmenu.classList.contains('show')) {
-  mainImage.src = "/IMG_6817.png"; 
+  mainImage.src = "IMG_6817.png"; 
   mainImage.style.display='block';
 }
 else{
-  mainImage.src="/IMG_5524.png";
+  mainImage.src="IMG_5524.png";
   mainImage.style.display='block';
 }
 }
