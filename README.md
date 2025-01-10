@@ -11,6 +11,7 @@ It was made up by HTML,CSS & JS.<br>
 •Responsive design for various screens.<br>
 •The social media habdles of the department. <br>
 •Stylish and modern user interface.<br>
+•Blue & White background ground colors representing the department colors. <br>
 <hr>
 🔗<strong>ACCESSIBILITY</strong>
 <hr><br>
