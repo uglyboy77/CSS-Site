@@ -521,7 +521,7 @@ body.dark-mode .counter{
      .frame1{
          left:50%;
     }
-    .butt{
+    #Previous, #next1{
       left:70%;
     }
      #Resources a img{
@@ -576,7 +576,7 @@ body.dark-mode .counter{
     .frame1{
          left:25%;
     }
-    .butt{
+    #Previous, #next1{
       left:70%;
     }
     #Resources a img{
