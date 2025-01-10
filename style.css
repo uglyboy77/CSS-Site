@@ -524,9 +524,14 @@ body.dark-mode .counter{
     .butt{
       left:70%;
     }
-     #Resources img{
+     #Resources a img{
       left:115px;
-     }
+    }
+    .news a img{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -569,12 +574,17 @@ body.dark-mode .counter{
         background:transparent;
    }
     .frame1{
-         left:50%;
+         left:25%;
     }
     .butt{
       left:70%;
     }
-    #Resources img{
+    #Resources a img{
       left:115px;
      }
+    .news a img{
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 }
