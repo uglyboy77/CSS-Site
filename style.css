@@ -491,11 +491,15 @@ body.dark-mode .counter{
     }
 
     .css {
-        left: 3rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .image {
-        left: 25rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     nav {
@@ -515,11 +519,15 @@ body.dark-mode .counter{
     }
 
     .css {
-        left: 2rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .image {
-        left: 15rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     nav {
