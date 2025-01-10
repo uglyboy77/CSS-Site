@@ -550,10 +550,10 @@ body.dark-mode .counter{
         bottom: 50px; 
         width: 80%; 
         margin: 0 auto;
-        padding: 0 100px;
+        left:160px;
     }
     
    .click{
-        left: 200px;
+        left: 160px;
    }
 }
