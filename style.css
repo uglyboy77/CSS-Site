@@ -512,7 +512,14 @@ body.dark-mode .counter{
         top: 1.5rem;
         left: 1.5rem;
     }
+    .frames {
+        bottom: 20px; 
+        width: 70%; 
+        margin: 0 auto;
+        padding: 0 60px; 
+    }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     body {
         font-size: 1rem;
@@ -525,9 +532,7 @@ body.dark-mode .counter{
     }
 
     .image {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        left:85%;
     }
 
     nav {
@@ -539,5 +544,12 @@ body.dark-mode .counter{
         width: 90%;
         top: 1.25rem;
         left: 1.25rem;
+    }
+    
+  .frames {
+        bottom: 50px; 
+        width: 80%; 
+        margin: 0 auto;
+        padding: 0 40px;
     }
 }
