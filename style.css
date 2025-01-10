@@ -556,4 +556,8 @@ body.dark-mode .counter{
    .click{
         left: 160px;
    }
+   #group1{
+        background:transparent;
+   }
+        
 }
