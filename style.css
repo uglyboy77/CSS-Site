@@ -546,10 +546,14 @@ body.dark-mode .counter{
         left: 1.25rem;
     }
     
-  .frames {
+    .frames {
         bottom: 50px; 
         width: 80%; 
         margin: 0 auto;
-        padding: 0 40px;
+        padding: 0 100px;
     }
+    
+   .click{
+        left: 200px;
+   }
 }
