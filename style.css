@@ -521,16 +521,18 @@ body.dark-mode .counter{
      .frame1{
          left:50%;
     }
-    #Previous, #next1{
+     #Previous{
+      left: 5%
+    }
+    #next1{
       left:70%;
     }
      #Resources a img{
-      left:115px;
+      left:35%;
     }
     .news a img{
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      width:100%;
+      height:100%;
     }
 }
 
@@ -574,17 +576,19 @@ body.dark-mode .counter{
         background:transparent;
    }
     .frame1{
-         left:25%;
+         left:30%;
     }
-    #Previous, #next1{
+     #Previous{
+      left 5%
+    }
+    #next1{
       left:70%;
     }
     #Resources a img{
-      left:115px;
+      left:20%;
      }
     .news a img{
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      width:100%;
+      height:100%;
     }
 }
