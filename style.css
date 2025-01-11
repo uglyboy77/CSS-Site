@@ -6,7 +6,7 @@ body {
 }
 .css{
   position: relative;
-  left: 40px;
+  left: 55px;
 }
 .image{
   position:fixed;
@@ -588,7 +588,7 @@ body.dark-mode .counter{
       left:18%;
     }
     #next1{
-      left:82%;
+      left:75%;
     }
     #Resources a img{
       left:20%;
