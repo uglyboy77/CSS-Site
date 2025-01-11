@@ -6,7 +6,7 @@ body {
 }
 .css{
   position: relative;
-  left: 55px;
+  left: 40px;
 }
 .image{
   position:fixed;
@@ -65,7 +65,7 @@ header span{
   position:relative;
   z-index: 1;
   top:435px;
-  left:80px;
+  left:95px;
 }
 .image-container{
   width: 420px;
