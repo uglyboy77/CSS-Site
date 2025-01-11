@@ -582,7 +582,7 @@ body.dark-mode .counter{
         background:transparent;
    }
     .frame1{
-         left:30%;
+         left:35%;
     }
      #Previous{
       left:18%;
@@ -599,7 +599,8 @@ body.dark-mode .counter{
     }
  
     .news {
-      width: 70%;
+      width: 100%;
+      height:70%
       max-width: 800px; 
       object-fit:cover;
       height: 424px; 
