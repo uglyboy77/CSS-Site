@@ -585,7 +585,7 @@ body.dark-mode .counter{
          left:35%;
     }
      #Previous{
-      left:16%;
+      left:17%;
     }
     #next1{
       left:75%;
@@ -598,13 +598,21 @@ body.dark-mode .counter{
       height:100%;
       left:20%;
     }
- 
     .news {
-      width: 40%;
+      width: 60%;
       height:40%
       max-width: 800px; 
       object-fit:cover;
       max-height: 424px; 
       overflow: hidden; 
+}
+    @keyframes slideup {
+  0%, 25% { transform: translateY(0); }
+  35%, 65% { transform: translateY(-58%); }
+  75%,85% { transform: translateY(-88.5%); }
+  95%, 100% { transform: translateY(0); }
+}
+    .write{
+      left:50%;
 }
 }
