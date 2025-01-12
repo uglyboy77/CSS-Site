@@ -1,7 +1,7 @@
 # CSS-Site
 🔗<strong>OVERVIEW</strong>
 <hr>
-This project was built by Baffour Brenya Agyenim Boateng on 27/12/24.
+This project was built by Baffour Brenya Agyenim Boateng on 27/12/24 with just only a phone. 
 CSS-Site is a suggested website that comprises of the department news,upcoming/past activities and projects.
 It was made up by HTML,CSS & JS.<br>
 <hr>
