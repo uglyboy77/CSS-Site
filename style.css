@@ -599,7 +599,7 @@ body.dark-mode .counter{
       left:20%;
     }
     .news {
-      width: 60%;
+      width: 80%;
       height:40%
       max-width: 800px; 
       object-fit:cover;
@@ -608,8 +608,8 @@ body.dark-mode .counter{
 }
     @keyframes slideup {
   0%, 25% { transform: translateY(0); }
-  35%, 65% { transform: translateY(-58%); }
-  75%,85% { transform: translateY(-88.5%); }
+  35%, 65% { transform: translateY(-68%); }
+  75%,85% { transform: translateY(-108.5%); }
   95%, 100% { transform: translateY(0); }
 }
     .write{
