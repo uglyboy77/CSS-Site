@@ -613,6 +613,6 @@ body.dark-mode .counter{
   95%, 100% { transform: translateY(0); }
 }
     .write{
-      left:50%;
+      left:30%;
 }
 }
