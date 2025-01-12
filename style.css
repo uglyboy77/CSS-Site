@@ -108,7 +108,7 @@ header span{
   top:290px;
 }
 #next1{
-  left: 350px;
+  left: 362px;
   top: 239px;
 }
 #Previous::before{
@@ -585,7 +585,7 @@ body.dark-mode .counter{
          left:35%;
     }
      #Previous{
-      left:18%;
+      left:16%;
     }
     #next1{
       left:75%;
@@ -596,14 +596,15 @@ body.dark-mode .counter{
     .slide-container{
       width:100%;
       height:100%;
+      left:20%;
     }
  
     .news {
-      width: 100%;
-      height:70%
+      width: 40%;
+      height:40%
       max-width: 800px; 
       object-fit:cover;
-      height: 424px; 
+      max-height: 424px; 
       overflow: hidden; 
 }
 }
