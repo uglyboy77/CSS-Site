@@ -489,26 +489,20 @@ body.dark-mode .counter{
     body {
         font-size: 1.2rem;
     }
-
     .css {
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-
     .image {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        left:93%;
     }
-
     nav {
         top: 6rem;
         height: 18rem;
     }
-
     header {
-        width: 85%;
+        width: 95%;
         top: 1.5rem;
         left: 1.5rem;
     }
@@ -518,17 +512,24 @@ body.dark-mode .counter{
         margin: 0 auto;
         padding: 0 60px; 
     }
+    .click{
+      left:35%;
+    }
      .frame1{
-         left:50%;
+         left:40%;
     }
      #Previous{
-      left: 5%
+      left:15%;
     }
     #next1{
       left:70%;
     }
+    .c1{
+      height:50%;
+      width:50%;
+    }
      #Resources a img{
-      left:35%;
+      right:25%;
     }
     .slide-container{
       width:100%;
@@ -539,6 +540,19 @@ body.dark-mode .counter{
       max-width: 800px; 
       height: 424px; 
       overflow: hidden; 
+}
+.write{
+  left:35%;
+}
+.write2{
+  width:50%;
+}
+.write3{
+  display:block;
+} 
+#group1{
+  background:transparent;
+  border:none;
 }
 }
 
