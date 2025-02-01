@@ -540,6 +540,7 @@ body.dark-mode .counter{
       max-width: 800px; 
       height: 424px; 
       overflow: hidden; 
+      left:30%;
 }
 .write{
   left:40%;
