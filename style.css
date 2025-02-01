@@ -17,6 +17,12 @@ body {
 #drop{
   z-index: 1000;
 }
+.menu a:hover{
+  color: rgb(197, 5, 255);
+}
+.menu a:active{
+color: rgb(197, 5, 255);
+}
 nav {
   visibility: hidden;
   position:fixed;
@@ -130,7 +136,7 @@ h2{
 .news{
   position: relative;
   width: 100%;
-  max-width: 800px;
+  max-width: 100%;
   height: 424px;
   overflow: hidden;
   font-size: 15px;
@@ -144,6 +150,7 @@ h2{
   color: white;
   margin-left: 5px;
   padding-left: 5px;
+  transition: background-color 0.3s ease;
 }
 .news a img{
   position: relative;
@@ -354,7 +361,7 @@ flex-shrink: 0;
 h5{
   text-align:center;
   position:relative;
-  display;block;
+  display:block;
   font-size: 30px;
   top:30px;
 }
@@ -534,22 +541,32 @@ body.dark-mode .counter{
     .slide-container{
       width:100%;
       height:100%;
+      height: calc(500px * 3); 
 }
     .news {
       width: 100%;
       max-width: 800px; 
-      height: 424px; 
-      overflow: hidden; 
-      left:30%;
+      height: 500px; 
+      overflow: hidden;
+      left: 25%;
+}
+.write8{
+  display:block;
+}
+@keyframes slideup {
+  0%, 25% { transform: translateY(7%); }
+  35%, 65% { transform: translateY(-24%); }
+  75%,85% { transform: translateY(-54%); }
+  95%, 100% { transform: translateY(0); }
 }
 .write{
   left:40%;
 }
 .write2{
-  justify-content:center;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  width:50%;
+  width:25%;
 }
 .write3{
   display:block;
@@ -598,6 +615,7 @@ body.dark-mode .counter{
    }
    #group1{
         background:transparent;
+        border:none;
    }
     .frame1{
          left:35%;
@@ -618,7 +636,7 @@ body.dark-mode .counter{
     }
     .news {
       width: 80%;
-      height:40%
+      height:40%;
       max-width: 800px; 
       object-fit:cover;
       max-height: 424px; 
