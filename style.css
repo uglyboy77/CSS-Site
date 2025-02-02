@@ -555,8 +555,8 @@ body.dark-mode .counter{
 }
 @keyframes slideup {
   0%, 25% { transform: translateY(7%); }
-  35%, 65% { transform: translateY(-30%); }
-  75%,85% { transform: translateY(-52%); }
+  35%, 65% { transform: translateY(-27%); }
+  75%,85% { transform: translateY(-62%); }
   95%, 100% { transform: translateY(0); }
 }
 .write{
