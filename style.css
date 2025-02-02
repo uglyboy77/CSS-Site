@@ -576,8 +576,28 @@ body.dark-mode .counter{
   border:none;
 }
 }
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 300px) {
+  @keyframes slideup {
+    0%, 25% { transform: translateY(2%); }
+    35%, 65% { transform: translateY(-38.7%); }
+    75%,85% { transform: translateY(-78.5%); }
+    95%, 100% { transform: translateY(0); }
+  }
+  #Previous{
+    left:3%;
+  }
+  .contact{
+    width: 250%;
+    max-width: 120%;
+    right: 0;
+  }
+}
+  @media screen and (min-width: 450px){
+  header {
+    width: 100%;
+}
+}
+@media screen and (min-width: 600px)  {
     body {
         font-size: 1rem;
     }
@@ -644,8 +664,8 @@ body.dark-mode .counter{
 }
     @keyframes slideup {
   0%, 25% { transform: translateY(0); }
-  35%, 65% { transform: translateY(-68%); }
-  75%,85% { transform: translateY(-108.5%); }
+  35%, 65% { transform: translateY(-8%); }
+  75%,85% { transform: translateY(-38.5%); }
   95%, 100% { transform: translateY(0); }
 }
     .write{
