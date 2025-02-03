@@ -13,6 +13,7 @@ body {
   left:350px;
   top:30px;
   z-index:1000;
+  cursor:pointer;
 }
 #drop{
   z-index: 1000;
