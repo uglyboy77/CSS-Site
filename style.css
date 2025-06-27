@@ -747,6 +747,18 @@ body.dark-mode .counter {
     border: none;
   }
 
+  #Previous::before {
+    position: relative;
+    content: '<';
+    margin-right: 5px;
+}
+
+  #next1::before {
+   position: relative;
+   content: '>';
+   margin-left: 5px;
+}
+
   @keyframes slideup {
 
     0%,
