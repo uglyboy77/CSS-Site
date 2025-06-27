@@ -228,12 +228,12 @@ header span {
 
 #Previous::before {
   content: '<';
-  text-align: center;
+
 }
 
 #next1::before {
   content: '>';
-  text-align: center;
+  
 }
 
 .news_container {
