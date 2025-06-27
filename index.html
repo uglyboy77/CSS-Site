@@ -1,82 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1 us">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximun-scale=1.0, user-scalable=no us">
 
   <title>Computer Science Students</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
   <header>
     <img src="IMG_5541.jpeg" height="50" width="50" class="css"><span>computer science society</span>
-    </header>
-    <div class="menu">
-      <img src="IMG_5524.png" height="35" width="35" class="image" id="main-image" onclick="toggledown()">
-      <nav id="drop">
-        <button id="toggle" onclick="toggleTheme()">☽</button><br>
-        <a href="#About">About</a><br>
-        <a href="#news">News</a><br>
-        <a href="#Extra">Activities</a><br>
-        <a href="#Projects">Projects</a><br>
-        <a href="#Resources">Resources</a><br>
-        <a href="#contact">Contacts</a><br>
-      </nav>
-    </div>
-    <div class="clock" id="clock">00:00:00</div>
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-menu-button-wide"
+      viewBox="0 0 16 16" onclick="toggledown()">
+      <path
+        d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v2A1.5 1.5 0 0 1 14.5 5h-13A1.5 1.5 0 0 1 0 3.5zM1.5 1a.5.5 0 0 0-.5.5v2a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 0-.5-.5z" />
+      <path
+        d="M2 2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m10.823.323-.396-.396A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0M0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5" />
+    </svg>
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-right"
+      viewBox="0 0 16 16" onclick="closedown()">
+      <path fill-rule="evenodd"
+        d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+      <path fill-rule="evenodd"
+        d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+    </svg>
+    <nav id="drop">
+      <button id="toggle" onclick="toggleTheme()">☽</button><br>
+      <a href="#About">About</a>
+      <a href="#news">News</a>
+      <a href="#Extra">Activities</a>
+      <a href="#Projects">Projects</a>
+      <a href="#Resources">Resources</a>
+      <a href="#contact">Contacts</a>
+    </nav>
+    <div class="fullscreen-exit" onclick="closedown()"></div>
+  </header>
+  <div class="clock" id="clock">00:00:00</div>
   <div class="frames" id="About">
-    <img src="IMG_5572.png" height="200" width="210" class="frame1">
-    <br>
-    <span class="click">Click here to connect with us: <br>
-      <a href="#contact"><b>CLICK HERE</b></a></span>
-    <div class="butt">
-      <button id="Previous" onclick="moveSlide(-1)">️️</button>
-      <button id="next1" onclick="moveSlide(1)">️</button>
-    </div>
     <div class="image-container">
+      <div class="butt">
+        <button id="Previous" onclick="moveSlide(-1)">️️</button>
+        <button id="next1" onclick="moveSlide(1)">️</button>
+      </div>
+      <span class="click"> connect with us via: <br>
+        <a href="#contact"><b>CONNECT</b></a></span>
+      <img src="IMG_5572.png" height="300" width="420" class="frame1">
+      <br>
       <div class="imager">
-    <img src="IMG_6141.jpeg" height="370" width="420" class="image2">
-    <img src="IMG_6137.jpeg" height="370" width="420" class="image2">
-    <img src="IMG_6140.jpeg" height="370" width="420" class="image2">
-    <img src="IMG_6143.jpeg" height="420" width="420" class="image2">
-    <img src="IMG_6144.jpeg" height="370" width="420" class="image2">
-    <img src="IMG_6145.jpeg" height="370" width="420" class="image2">
-    </div>
-    </div>
-  </div>
-  <h2>NEWS</h2>
-  <div class="news" id="news">
-    <div class="slide-container">
-        <img src="IMG_6142.jpeg" height="300" width="400">
-        <span class="write8" ><b>2024/2025 Academic Year</b>
-        <br>Get to know the academic acivities for the next academic year.</span> 
-        <a href="PROVISIONAL 2024-2025 ACADEMIC YEAR.pdf">DOWNLOAD<img src="IMG_5601.png" height="35" width="35"></a>
-        <br>
-        <img src="IMG_6136.jpeg" height="380" width="380">
-        <span class="write8" ><b>2024/2025 Academic Year</b> <br>
-        Is it your dream to offer Computer Science in KNUST? Get to know the cut off point and requirements.</span>
-        <a href="Admission_Requirement (4).pdf">Admission Requirements<img src="IMG_5601.png" height="35" width="35"></a>
-          <a href="SHS-KNUST-2024.pdf">SHS Req.. <img src="IMG_5601.png" height="35" width="35"></a>
-        <br>
-        <img src="IMG_6152.jpeg" height="350" width="400">
-        <span class="write8"><b>2024/2025 Academic Year</b><br>
-        Get to know the school fees for the next academic year for both Fee paying and regular students.<br></span>
-        <span class="download">
-          <a href="UNDERGRADUATES REGULAR . CONTINUING YEARR ( 2-6 ) (1).pdf">Regular Students
-            <img src="IMG_5601.png" height="35" width="35"></a>
-          <a href="UNDERGRADUATES REGULAR . CONTINUING YEARR ( 2-6 ) (1).pdf">Fee Paying<img src="IMG_5601.png" height="35" width="35"></a>
-        </span>
+        <img src="IMG_6141.jpeg" class="image2">
+        <img src="IMG_6137.jpeg" class="image2">
+        <img src="IMG_6140.jpeg" class="image2">
+        <img src="IMG_6143.jpeg" class="image2">
       </div>
     </div>
-</div>
+  </div>
+  <br>
+
+  <div class="news_container" id="news">
+    <h2>NEWS</h2>
+    <div class="news">
+      <div class="slide-container">
+        <div class="news_content">
+          <img src="IMG_6142.jpeg" height="310" width="413">
+          <span class="write8"><br><b>2024/2025 Academic Year</b>
+            <br>Get to know the academic acivities for the next academic year.</span><br>
+          <span class="download">
+            <a href="PROVISIONAL 2024-2025 ACADEMIC YEAR.pdf">DOWNLOAD<img src="IMG_5601.png" height="25"
+                width="25"></a>
+        </div>
+        </span>
+        <br>
+        <div class="news_content">
+          <img src="IMG_6136.jpeg" height="410" width="380" class="news_image1">
+          <span class="write8"><br><b>2024/2025 Academic Year</b> <br>
+            Is it your dream to offer Computer Science in KNUST?<br> Get to know the cut off point and
+            requirements.</span><br>
+          <span class="download">
+            <a href="Admission_Requirement (4).pdf">Admission Requirements<img src="IMG_5601.png" height="25"
+                width="25"></a>
+            <a href="SHS-KNUST-2024.pdf">SHS Req.. <img src="IMG_5601.png" height="25" width="25"></a>
+        </div>
+        </span>
+        <br>
+        <div class="news_content">
+          <img src="IMG_6152.jpeg" height="350" width="400">
+          <span class="write8"><br><b>2024/2025 Academic Year</b><br>
+            Get to know the school fees for the next academic year<br> for both Fee paying and regular
+            students.</span><br>
+          <span class="download">
+            <a href="UNDERGRADUATES REGULAR . CONTINUING YEARR ( 2-6 ) (1).pdf">Regular Students
+              <img src="IMG_5601.png" height="25" width="25"></a>
+            <a href="UNDERGRADUATES REGULAR . CONTINUING YEARR ( 2-6 ) (1).pdf">Fee Paying<img src="IMG_5601.png"
+                height="25" width="25"></a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
   <h3>UPDATES/ACTIVITIES</h3><br>
   <div id="Extra">
     <a href="https://bit.ly/santacodes">
-      <img src="652c73f4-c26f-4be2-b054-77a6582aca96.jpeg" height="150" width="150"><br><span>Join <b>SantaCodes</b> and level up your programming skills by solving daily DSA challenges all month long.
+      <img src="652c73f4-c26f-4be2-b054-77a6582aca96.jpeg" height="150" width="150"><br><span class="update_text">Join
+        <b>SantaCodes</b> and
+        level up your programming skills by solving daily DSA challenges all month long.
         <br>
         <b>What’s in it for you?</b> <br>
         🚀 Sharpen your problem solving skills and ace technical interviews.<br>
@@ -87,130 +121,145 @@
         📅 1st - 31st December 2024</span></a><br>
     <a href="https://docs.google.com/forms/d/e/1FAIpQLSchLgSK9cJo_Xl4nclOUvI3ZhM9ean4CbEsvEbaAy_Q6VIbPw/viewform">
       <img src="8976cd8c-a240-4099-baf1-6d3a5bc1d9f4.jpeg" height="150" width="150"><br>
-      Challenge for the VACATION.<br>
-      1. CREATE A WEBSITE FOR CSS.<br>
-      2. ⁠BUILD AN EXAMS ALLOCATION SYSTEM FOR THE DEPARTMENT.<br>
-      Certificates will be awarded for participation. Prizes will be awarded to winners of the challenge. If you’re in a team, all members will get the certificate too. Click to see
-      Full details
-      #CodingAndUnleashingBrillianceEverywhere.</a>
-    <br><span class="extra">other activities will appear here.....</span>
+      <span class="update_text1"><b>Challenge for the VACATION.</b><br>
+        1. CREATE A WEBSITE FOR CSS.<br>
+        2. ⁠BUILD AN EXAMS ALLOCATION SYSTEM FOR THE DEPARTMENT.<br>
+        Certificates will be awarded for participation.<br> Prizes will be awarded to winners of the challenge. <br>If
+        you’re in a
+        team, all members will get the certificate too.<br> Click to see
+        Full details<br>
+        #CodingAndUnleashingBrillianceEverywhere.</span></a>
+    <span class="extra">other activities will appear here.....</span>
   </div>
+
+  <h4>PROJECTS</h4>
   <div id="Projects">
-    <h4>PROJECTS</h4>
     <div class="write">2024 CSS WEEK CELEBRATION<br>CLICK TO VIEW </div>
     <div class="slideshow-container">
-    <img id="p1" src="IMG_6139.jpeg" height="470" width="420" onclick="showContent('group1')"><br>
-    <div id="group1" class="hidden">
-    <a href="https://drive.google.com/drive/folders/1Tb-b2KsOrlUODMM8Whxi-kt7ZBw4opE1?usp=sharing">
-        <img src="IMG_6138.jpeg" height="350" width="400"><span class="write2">Official Monday<br> Click to view</span></a><br>
-    <a href="https://drive.google.com/drive/folders/16Q96uJpFLLOZ1Xgim670npUtBSfC6UL_?usp=sharing">
-      <img src="IMG_6145.jpeg" height="340" width="400"><span class="write2">REP YOUR JERSEY<br> Click to view</span></a>
-    <a href="https://drive.google.com/drive/folders/1MDPX_lED74O82wk4Wikf-KPg5axvQKrg?usp=sharing">
-      <img src="IMG_6147.jpeg" height="430" width="400"><span class="write2">REP YOUR SCHOOL<br>Click to View</span>
-    </a>
-    <a href="https://drive.google.com/drive/folders/1yK_YtZrdaKwHRYJGlFdVuxrW8oD3EuS_?usp=sharing">
-      <img src="IMG_6148.jpeg" height="300" width="400"><span class="write2">CS SYMPOSIUM
-        <br>Click to View</span>
-    </a>
-    <a href="https://drive.google.com/drive/folders/19kVcFCyCg_Wx1K5dl5FlVS-pg6WlMB23?usp=sharing">
-      <img src="IMG_6149.jpeg" height="350" width="400"><span class="write2">AFRICAN DAY <br>Click to View</span>
-    </a>
-    <a href="https://drive.google.com/drive/folders/1iOZTlDOzfv4Ng-zUYa7f__4nD99L0I5J?usp=sharing">
-      <img src="IMG_6150.jpeg" height="350" width="400"><span class="write2">HOB NOB <br>Click to View</span>
-    </a>
-    </div>
-     <div class="carousel-container">
-    <div class="carousel" id="carousel">
-      <div class="carousel-item">
-        <img src="590f426f-a799-4daa-8568-c31286ed1c8c.jpeg" height="420" width="420" class="c1">
-        <span class="write3"><b>MENTORSHIP RECRUITMENT </b><br>
-          The Computer Science Society is recruiting student mentors for the CSS Mentorship Scheme
-          Kindly register to be a mentor via the link
-          <a href="https://forms.gle/rDnHeH5ERyWvgHNTA"><b>Register</b></a><br>
-          Share your experiences, skills, and passion to make a lasting impact on a mentee’s journey<br>
-          #Let’sMakeADifference
-          #NewRevolution</span>
+      <img id="p1" src="IMG_6139.jpeg" height="470" width="420" onclick="showContent('group1')"><br>
+      <div id="group1" class="hidden"><br>
+        <a href="https://drive.google.com/drive/folders/1Tb-b2KsOrlUODMM8Whxi-kt7ZBw4opE1?usp=sharing">
+          <img src="IMG_6138.jpeg" height="350" width="400"><span class="write2">Official Monday<br> Click to
+            view</span></a>
+        <a href="https://drive.google.com/drive/folders/16Q96uJpFLLOZ1Xgim670npUtBSfC6UL_?usp=sharing">
+          <img src="IMG_6145.jpeg" height="340" width="400"><span class="write2">REP YOUR JERSEY<br> Click to
+            view</span></a>
+        <a href="https://drive.google.com/drive/folders/1MDPX_lED74O82wk4Wikf-KPg5axvQKrg?usp=sharing">
+          <img src="IMG_6147.jpeg" height="430" width="400"><span class="write2">REP YOUR SCHOOL<br>Click to View</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1yK_YtZrdaKwHRYJGlFdVuxrW8oD3EuS_?usp=sharing">
+          <img src="IMG_6148.jpeg" height="300" width="400"><span class="write2">CS SYMPOSIUM
+            <br>Click to View</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/19kVcFCyCg_Wx1K5dl5FlVS-pg6WlMB23?usp=sharing">
+          <img src="IMG_6149.jpeg" height="350" width="400"><span class="write2">AFRICAN DAY <br>Click to View</span>
+        </a>
+        <a href="https://drive.google.com/drive/folders/1iOZTlDOzfv4Ng-zUYa7f__4nD99L0I5J?usp=sharing">
+          <img src="IMG_6150.jpeg" height="350" width="400"><span class="write2">HOB NOB <br>Click to View</span>
+        </a>
       </div>
-      <div class="carousel-item">
-        <img src="f64f8e41-9300-4ffb-b38b-0db142a1bc62.jpeg" height="400" width="400" class="c1">
-        <span class="write3"><b>EL MERCADO: EMPOWERING CSS ENTREPRENEURS!</b><br>
-          1. Getting rid of advertisements in official class pages.<br>
-          2. Patronize products from your colleagues.<br>
-          3. Making CSS more fun and engaging.<br>
-          4. On Fridays, a lucky product will get the chance to be on all CSS platforms. <br>
-          El Mercado is back, every Friday!<br>
-          Next academic year.<br>
-          Join El Mercado now!<br><a href="https://chat.whatsapp.com/JSBWEDCO281LPSyzVJtZdT"><b>Join</b></a>
-        </span>
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          <div class="carousel-item">
+            <img src="590f426f-a799-4daa-8568-c31286ed1c8c.jpeg" height="1020" width="420" class="c1">
+            <span class="write3"><br><b>MENTORSHIP RECRUITMENT </b><br>
+              The Computer Science Society is recruiting student mentors for the CSS Mentorship Scheme
+              Kindly register to be a mentor via the link
+              <a href="https://forms.gle/rDnHeH5ERyWvgHNTA"><b>Register</b></a><br>
+              Share your experiences, skills, and passion to make a lasting impact on a mentee’s journey<br>
+              #Let’sMakeADifference
+              #NewRevolution</span>
+          </div>
+          <div class="carousel-item">
+            <img src="f64f8e41-9300-4ffb-b38b-0db142a1bc62.jpeg" height="400" width="400" class="c1">
+            <span class="write3"><br><b>EL MERCADO: EMPOWERING CSS ENTREPRENEURS!</b><br>
+              1. Getting rid of advertisements in official class pages.<br>
+              2. Patronize products from your colleagues.<br>
+              3. Making CSS more fun and engaging.<br>
+              4. On Fridays, a lucky product will get the chance to be on all CSS platforms. <br>
+              El Mercado is back, every Friday!<br>
+              Next academic year.<br>
+              Join El Mercado now!<br><a href="https://chat.whatsapp.com/JSBWEDCO281LPSyzVJtZdT"><b>Join</b></a>
+            </span>
+          </div>
+          <div class="carousel-item">
+            <img src="f7de345e-0d0a-46df-9f24-aac43e163973.jpeg" height="400" width="400" class="c1">
+            <span class="write3"><br><b>SOO KIND INITIATIVE</b><br>
+              If you are interested in contributing to this meaningful cause kindly do so through the following
+              accounts<br>
+              <hr>
+              𝐂𝐚𝐥𝐁𝐚𝐧𝐤<br>
+              𝐁𝐚𝐧𝐤 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐍𝐮𝐦𝐛𝐞𝐫: *1400009123948*<br>
+              *Emmanuel Akomdo*<br>
+              <hr>
+              𝐌𝐓𝐍 𝐌𝐨𝐦𝐨: *0592895413*<br>
+              *Emmanuel Akomdo*<br>
+              <hr>
+              𝐑𝐞𝐟𝐞𝐫𝐞𝐧𝐜𝐞: SOO KIND<br>
+              Supporting with items will also be greatly appreciated<br>
+              Link to Donation Form: <a href="https://forms.gle/aWbb2CMWZpTgAyMi8">LINK</a>
+              <hr>
+              *©️CSS ADMINISTRATION 24/25*
+            </span>
+          </div>
+          <div class="carousel-item">
+            <img src="f5dd3923-6432-4dd0-bbdf-5233602cb83d.jpeg" height="400" width="400" class="c1"
+              onclick="showContent('group3')">
+            <span class="write4">DINNER NIGHT 24' CLICK TO VIEW</span>
+            <div id="group3" class="hidden">
+              <a href="https://drive.google.com/drive/folders/1p0lvcysnVxKhFd1Zcn_zPKEGULKzVUmY?usp=sharing">
+                <img class="p2" src="IMG_6151.jpeg" height="370" width="420"><span class="write4">Click to
+                  View</span></a>
+            </div>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="control-button" id="prev">Previous</button>
+          <button class="control-button" id="next">Next</button>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="f7de345e-0d0a-46df-9f24-aac43e163973.jpeg" height="400" width="400" class="c1">
-        <span class="write3"><b>SOO KIND INITIATIVE</b><br>
-          If you are interested in contributing to this meaningful cause kindly do so through the following accounts<br>
-          <hr>
-          𝐂𝐚𝐥𝐁𝐚𝐧𝐤<br>
-          𝐁𝐚𝐧𝐤 𝐀𝐜𝐜𝐨𝐮𝐧𝐭 𝐍𝐮𝐦𝐛𝐞𝐫: *1400009123948*<br>
-          *Emmanuel Akomdo*<br>
-          <hr>
-          𝐌𝐓𝐍 𝐌𝐨𝐦𝐨: *0592895413*<br>
-          *Emmanuel Akomdo*<br>
-          <hr>
-          𝐑𝐞𝐟𝐞𝐫𝐞𝐧𝐜𝐞: SOO KIND<br>
-          Supporting with items will also be greatly appreciated<br>
-          Link to Donation Form: <a href="https://forms.gle/aWbb2CMWZpTgAyMi8">LINK</a>
-          <hr>
-          *©️CSS ADMINISTRATION 24/25*
-        </span>
-      </div>
-      <div class="carousel-item">
-          <img src="f5dd3923-6432-4dd0-bbdf-5233602cb83d.jpeg" height="400" width="400" class="c1" onclick="showContent('group3')">
-    <span class="write4">DINNER NIGHT 24' CLICK TO VIEW</span>
-    <div id="group3" class="hidden">
-      <a href="https://drive.google.com/drive/folders/1p0lvcysnVxKhFd1Zcn_zPKEGULKzVUmY?usp=sharing">
-        <img class="p2" src="IMG_6151.jpeg" height="370" width="420"><span class="write4">Click to View</span></a>
-    </div>
+      <span class="extra1">other projects will appear here.....</span>
     </div>
   </div>
-  <div class="controls">
-    <button class="control-button" id="prev">Previous</button>
-    <button class="control-button" id="next">Next</button>
   </div>
-   </div>
-  <span class="extra1">other projects will appear here.....</span>
-    </div>
-    </div>
-</div>
 
-    <div id="Resources">
-      <h5>RESOURCES</h5><br>
+  <div id="Resources">
+    <h5>RESOURCES</h5><br>
     <b>YEAR 1</b><br>
-    <a href="https://drive.google.com/file/d/1kfUESTWZgEvEi-hEAIhVwsK7tM6gcNs8"><img src="IMG_5539.jpeg" height="100" width="100"><span class="text">Compiled Resources for Year 1</span></a><br>
+    <a href="https://drive.google.com/file/d/1kfUESTWZgEvEi-hEAIhVwsK7tM6gcNs8"><img src="IMG_5539.jpeg" height="100"
+        width="100"><span class="text">Compiled Resources for Year 1</span></a><br>
     <b>Year 2</b><br>
     <a href="https://drive.google.com/file/d/1h4KAvNahb-Oe4Cs2_dL78fd3nU9vgEGB">
       <img src="IMG_5541.jpeg" height="100" width="100"><span class="text">Compiled Resources for Year 2</span>
     </a><br>
     <b>Year 3</b><br>
-    <a href="https://drive.google.com/file/d/1pl-BIOegdQJcLm65jdZguvpQGpSAIhJT"><img src="IMG_5539.jpeg" height="100" width="100"><span class="text">Compiled Resources for Year 3</span></a><br>
+    <a href="https://drive.google.com/file/d/1pl-BIOegdQJcLm65jdZguvpQGpSAIhJT"><img src="IMG_5539.jpeg" height="100"
+        width="100"><span class="text">Compiled Resources for Year 3</span></a><br>
     <b>Year 4</b><br>
-    <a href="https://drive.google.com/file/d/1O4Ah1QQlYfaaShAhYhX29by2ZqjqAA2F"><img src="IMG_5541.jpeg" height="100" width="100"><span class="text">Compiled Resources for Year 4</span>
+    <a href="https://drive.google.com/file/d/1O4Ah1QQlYfaaShAhYhX29by2ZqjqAA2F"><img src="IMG_5541.jpeg" height="100"
+        width="100"><span class="text">Compiled Resources for Year 4</span>
   </div>
   </a>
   </div>
+
   <div id="contact" class="contact">
     <h6>Connect With Us</h6>
-    <a href="https://whatsapp.com/channel/0029VawygOn7dmeiVqDY4f47"><img src="IMG_5634.png" height="70" width="100" class="Wicon"></a>
+    <a href="https://whatsapp.com/channel/0029VawygOn7dmeiVqDY4f47"><img src="IMG_5634.png" height="70" width="100"
+        class="Wicon"></a>
     <a href="https://x.com/thecssknust?s=21"><img src="IMG_5637.png" height="35" width="35" class="Xicon"></a>
     <a href="mailto:thecssknust@gmail.com"><img src="IMG_6063.png" height="35" width="35" class="Xicon"></a> <br>
     <span class="write5">
-    DENNIS-ANDZIE LED ADMINSTRATION</span>
+      DENNIS-ANDZIE LED ADMINSTRATION</span>
     <hr>
     <span class="write6">COMPUTER SCIENCE SOCIETY</span>
     <hr>
     <div class="counter" id="counter"></div>
-  <span class="plus">+  </span><br> students
+    <span class="plus">+ </span><br>
+    <span class="students_text">Students</span>
     <footer>©️BAFFOUR BRENYA AGYENIM BOATENG | 2024</footer>
   </div>
   <script src="main.js"></script>
+
 </body>
-</html>
+
 </html>
