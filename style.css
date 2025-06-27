@@ -537,6 +537,11 @@ h5 {
   margin-top: 10px;
 }
 
+#Resources a {
+  display: block;
+  text-align: center;;
+}
+
 #Resources a img {
   position: relative;
   left: 90px;
