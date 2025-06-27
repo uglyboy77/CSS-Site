@@ -748,13 +748,13 @@ body.dark-mode .counter {
   #Previous::before {
     position: relative;
     content: '<';
-    right: 5px;
+    right: 7px;
 }
 
   #next1::before {
    position: relative;
    content: '>';
-   left: 5px;
+   right: 7px;
 }
 
   @keyframes slideup {
