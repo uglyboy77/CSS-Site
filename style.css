@@ -98,7 +98,6 @@ header {
 
 header img {
   margin-right: 10px;
-
 }
 
 .bi-box-arrow-right {
@@ -212,6 +211,15 @@ header span {
   color: white;
 }
 
+#Previous span,
+#next1 span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
 #next1 {
   margin-left: auto;
 }
@@ -226,13 +234,6 @@ header span {
   color: black;
 }
 
-#Previous::before {
-  content: '<';
-}
-
-#next1::before {
-  content: '>';
-}
 
 .news_container {
   margin-top: 25%;
