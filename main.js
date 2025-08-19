@@ -133,7 +133,7 @@ function updateCarousel() {
   carousel.style.transform = `translateX(${offset}%)`;
 }
 setInterval(() => {
-  const slides = document.querySelectorAll('.slideshow-container img');
+  const slides = document.querySelectorAll('.imager img');
   if (slides.length === 0) return;
   currentSlide = (currentSlide + 1) % slides.length;
   moveSlide(0);
