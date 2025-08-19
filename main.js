@@ -132,4 +132,9 @@ function updateCarousel() {
   const offset = -currentIndex * 100;
   carousel.style.transform = `translateX(${offset}%)`;
 }
-
+setInterval(() => {
+  const slides = document.querySelectorAll('.slideshow-container img');
+  if (slides.length === 0) return;
+  currentSlide = (currentSlide + 1) % slides.length;
+  moveSlide(0);
+}, 10000);
