@@ -135,6 +135,6 @@ function updateCarousel() {
 setInterval(() => {
   const slides = document.querySelectorAll('.imager img');
   if (slides.length === 0) return;
-  currentSlide = (currentSlide + 1) % slides.length;
+  currentIndex = (currentIndex + 1) % slides.length;
   moveSlide(0);
 }, 10000);
